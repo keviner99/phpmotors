@@ -1,0 +1,156 @@
+@media only screen and (min-width: 40em) {
+
+    html{
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after{
+    box-sizing: inherit;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+    
+    h2 {
+        font-size: 28px;
+    }
+    
+    h3 {
+        font-size: 25px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+    
+    body {
+        margin: auto;
+        max-width: 85%;
+    }
+    
+    p, a, label {
+        font-size: 25px;
+        margin: 0%;
+        padding: 00.5em;
+    }
+
+    li {
+        font-size: 23px;
+    }
+
+    img {
+    max-width: 100%;
+    }
+
+    input {
+        font-size: 25px;
+    }
+
+    /********HEADER********/
+
+    .account {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /******NAVIGATION*******/
+
+    nav li {
+        font-size: 25px;
+    }   
+
+    /******HOME PAGE******/
+
+    #delorean-img {
+        width: 65%;
+    }
+
+    .delorean {
+        display: flex;
+        margin-top: -38px;
+    }
+
+    .today {
+        display: flex;
+        justify-content: left;
+        margin-top: -25px;
+        padding: 10px;
+    }
+
+    /****delorean****/
+
+    .upgrades {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 250px;
+    }
+
+    /***content 1****/
+
+    .content-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /****content 2****/
+
+    #reviews {
+        font-size: 25px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*******LOGIN*******/
+    
+    .label {
+        text-align: left;
+        padding: 00.5em;
+    }
+
+    .loginBtn,
+    .registerBtn,
+    .add-class-btn,
+    .add-vehicle-btn,
+    .updateBtn,
+    .upload-btn,
+    .add-review-btn,
+    .deleteBtn  {
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .loginBtn input,
+    .registerBtn input
+    .add-class-btn input,
+    .add-vehicle-btn input,
+    .updateBtn input,
+    .upload-btn input,
+    .add-review-btn input,
+    .deleteBtn input {
+        font-size: 25px;
+    }
+
+    .create-account {
+        text-align: left;
+        font-size: 27px;
+    }
+
+    /***VEHICLE MANAGEMENT***/
+    #classificationList {
+        padding: 5px;
+        
+    }
+
+    th, td {
+        font-size: 25px;
+        padding: 0.5px;
+    }
+
+    select {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    
+    /***VEHICLE CLASSIFICATION***/
+}

@@ -1,0 +1,332 @@
+/**************
+CSS Styles for phpmotors
+**********/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+html{
+ box-sizing: border-box;
+}
+
+*, *:before, *:after{
+ box-sizing: inherit;
+}
+
+body {
+    max-width: 95%;
+    border-radius: 15px;
+    font-size: 12px;
+    background-image:url('/phpmotors/images/site/small_check.jpg');
+}
+
+#wrapper {
+    background-color: white;
+    border: 6px solid #4c96d7;
+    border-radius: 8px;
+}
+
+h1 {
+    padding: 00.5em;
+}
+
+h2 {
+    font-size: 22px;
+    padding: 0.3em;
+}
+
+h3, h4 {
+    font-size: 18px;
+}
+
+p, label {
+    font-size: 15px;
+    padding: 0.5em;
+}
+p li {
+    font-size: 14px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/**********HEADER**********/
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: gray;
+}
+
+.account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/**********NAVIGATION**********/
+
+nav {    
+    background-color: #3a3a3a; 
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-align: center;    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;    
+}
+
+nav li {
+    flex: 1 1 auto;
+    display: block;
+}
+
+nav ul {
+    flex-flow: row wrap;
+    margin-left: 2%;
+}
+
+nav ul li {
+    float: left;
+    padding-left: 40px;       
+}
+
+nav a:hover {
+    background-color: #4c96d7;
+    color: #3a3a3a;
+}
+
+/*********FOOTER*********/
+footer {
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/*******HOME PAGE*********/
+
+#delorean-img {
+    max-width: 90%;
+    position: absolute;
+}
+
+.delorean {
+    display: flex;
+    justify-content:left;
+    position: relative;
+    color: #4c96d7;
+    padding: 0.5em;    
+}
+
+.today {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 150px;
+}
+
+/*****delorean*****/
+
+.upgrades {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 5px;     
+}
+
+/***content 1***/
+
+.content-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.upgrades2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 7px;
+}
+
+.upgrades3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 7px; 
+}
+
+.card-img {
+    background-color: #4c96d7;
+    text-align: center;
+}
+
+.upgrade-name {
+    background-color: white;
+}
+
+/***content 2***/
+
+#reviews li {
+    padding: 0.5em;
+}
+
+/*******LOGIN*******/
+
+form fieldset {
+    display: grid;
+    border-radius: 10px;
+    padding: 00.5em;
+    border-color: black;
+}
+
+.label {
+    text-align: center;
+    padding: 00.5em;
+}
+.label input {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.loginBtn input,
+.registerBtn input,
+.add-class-btn input,
+.add-vehicle-btn input,
+.updateBtn input,
+.upload-btn input,
+.add-review-btn input,
+.deleteBtn input{
+    color: black;
+    background-color: #4c96d7;
+    font-size: 22px;
+    padding: 6px;
+}
+
+.loginBtn input:hover,
+.registerBtn input:hover,
+.add-class-btn input:hover,
+.add-vehicle-btn input:hover,
+.updateBtn input:hover,
+.upload-btn input:hover,
+.add-review-btn input:hover,
+.deleteBtn input:hover {
+    color: white;
+    background-color: black;
+}
+
+.loginBtn,
+.registerBtn,
+.add-class-btn,
+.add-vehicle-btn,
+.updateBtn,
+.upload-btn,
+.add-review-btn,
+.deleteBtn {
+    text-align: center;
+    padding: 1rem;
+}
+
+form .label {
+    padding-top: 1rem;
+}
+
+form .label input:required:invalid {
+    border-left: red solid 5px;
+}
+
+form .label input:required:valid {
+    border-left: green solid 5px;
+}
+
+.create-account {
+    text-align: center;
+    font-size: 20px;
+}
+
+/***VEHICLES****/
+#requiredFields {
+    font-size: 24px;
+}
+
+#classificationId {
+    font-size: 23px;
+}
+
+select {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.message-empty, .notice {
+    color: red;
+}
+
+.vehicle-added, .notify {
+    color: green;
+}
+
+/***VEHICLE CLASSIFICATION***/
+
+#inv-display{
+ margin: 0;
+ padding: 0;
+ display: flex;
+ flex-direction: column;
+}
+
+#inv-display li{
+ margin-bottom: 3em;
+ border: 5px #ccc solid;
+ list-style-type: none;
+ flex: 1 1 auto;
+ column-gap: 15px;
+ text-align: center;
+}
+
+.vehicle-detail-father {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.vehicleInfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 15px;
+    grid-row: 2/3;
+}
+
+#inv-display li img {
+    max-width: 100%;
+}
+
+#thumbnail-list{
+    column-gap: 15px;
+    padding: 8px;
+}
+
+/****VEHICLE INFORMATION****/
+.infoColor {
+    background-color: #ccc;
+}
+
+/***FINAL PROJECT***/
+.reviewList {
+    background-color: rgb(243, 241, 113);
+    padding: .5em;
+    
+}
+
+.reviewL {
+    list-style: none;
+}
+
+.reviewText {
+    background-color: white;
+    color:black;
+    padding: 0.5em;
+}
